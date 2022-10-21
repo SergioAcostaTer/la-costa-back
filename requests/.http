@@ -1,14 +1,16 @@
-GET http://localhost:666 HTTP/1.1
+GET http://localhost:666/api/ HTTP/1.1
 ###
 
-GET http://localhost:666/clear HTTP/1.1
+GET http://localhost:666/api/clear HTTP/1.1
 ###
 
-GET http://localhost:666/post/3003002022/3/Sergio%20Acosta HTTP/1.1
+GET http://localhost:666/api/post/3003022022/3/Sergio%20Acosta HTTP/1.1
 ###
 
+GET http://localhost:666/api/check/3003022022 HTTP/1.1
+###
 
-GET http://localhost:666/check/3013102022 HTTP/1.1
+GET http://localhost:666/api/checkoneday/3032022 HTTP/1.1
 
 
 

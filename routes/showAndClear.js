@@ -4,8 +4,9 @@ const bookReq = require("../models/bookReq")
 const router = express.Router()
 
 router.get("/clear", (req, res) => {
-    bookReq.deleteMany({}).then(res.json({status: "clear"}))
-    
+    bookReq.deleteMany({})
+    .then(() => bookReq.find({}))
+    .then(data => res.json(data))
 })
 
 router.get("/", (req, res) => {
