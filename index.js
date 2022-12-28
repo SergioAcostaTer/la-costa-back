@@ -1,10 +1,11 @@
 const express = require("express");
 const cors = require("cors");
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
 //routes
-const postRoute = require("./routes/postBlog") 
-const getRoute = require("./routes/getAllBlogs") 
+const postRoute = require("./routes/postBlog");
+const getRoute = require("./routes/getAllBlogs");
+const getbyName = require("./routes/getBlogByName");
 
 require("dotenv").config();
 
@@ -16,10 +17,8 @@ app.use(express.json());
 
 app.use("/", postRoute);
 app.use("/", getRoute);
-app.get("/", async (req, res) => {
- 
-
-});
+app.use("/", getbyName);
+app.get("/", async (req, res) => {});
 
 mongoose
   .connect(process.env.MONGODB_URI)
