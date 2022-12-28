@@ -1,16 +1,15 @@
-GET http://localhost:666/api/ HTTP/1.1
+POST http://localhost:666/post/ HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "body": ["puta"]
+# }
+
 ###
 
-GET http://localhost:666/api/clear HTTP/1.1
-###
 
-GET http://localhost:666/api/post/3003022022/3/Sergio%20Acosta HTTP/1.1
-###
 
-GET http://localhost:666/api/check/3003022022 HTTP/1.1
-###
-
-GET http://localhost:666/api/checkoneday/3032022 HTTP/1.1
+GET  http://localhost:666/getall/ HTTP/1.1
 
 
 

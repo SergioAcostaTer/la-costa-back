@@ -1,11 +1,12 @@
 {
-  "name": "booking-system",
+  "name": "la-costa-sounds-back",
   "version": "1.0.0",
-  "description": "A booking system for a booking web page :)",
+  "description": "la costa sounds back",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "Sergio Acosta",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "dotenv": "^16.0.3",
     "express": "4.18.2",
     "mongoose": "6.6.6",
+    "node-fetch": "^3.3.0",
     "nodemon": "2.0.20"
   }
 }
