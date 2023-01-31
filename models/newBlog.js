@@ -9,9 +9,6 @@ const newBlog = mongoose.Schema({
         type: String,
         default: "Daniel Acosta"
     },
-    availability: {
-        type: Boolean
-    },
     date: {
         type: String,
         default: new Date().toISOString()
